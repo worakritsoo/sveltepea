@@ -1,44 +1,39 @@
-main {
-  align-content: center;
-  box-sizing: border-box;
-  display: grid;
-  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-    'Arial', sans-serif;
-  hyphens: auto;
-  line-height: 1.65;
-  margin: 0 auto;
-  max-width: 680px;
-  min-height: 100vh;
-  padding: 72px 0;
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ion-color-pea: #9a68bb;
+  --ion-color-pea-rgb: 154, 104, 187;
+  --ion-color-pea-contrast: #000000;
+  --ion-color-pea-contrast-rgb: 0, 0, 0;
+  --ion-color-pea-shade: #885ca5;
+  --ion-color-pea-tint: #a477c2;
 }
-h1 {
-  font-size: 45px;
+
+.ion-color-pea {
+  --ion-color-base: var(--ion-color-pea);
+  --ion-color-base-rgb: var(--ion-color-pea-rgb);
+  --ion-color-contrast: var(--ion-color-pea-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-pea-contrast-rgb);
+  --ion-color-shade: var(--ion-color-pea-shade);
+  --ion-color-tint: var(--ion-color-pea-tint);
 }
-h2 {
-  margin-top: 1.5em;
+
+:root {
+  --ion-color-primary: #72289a;
+  --ion-color-primary-rgb: 114, 40, 154;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #642388;
+  --ion-color-primary-tint: #803ea4;
 }
-p {
-  font-size: 16px;
-}
-a {
-  border-bottom: 1px solid white;
-  color: #0076ff;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-a:hover {
-  border-bottom: 1px solid #0076ff;
-}
-code,
-pre {
-  color: #d400ff;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace, serif;
-  font-size: 0.92em;
-}
-code:before,
-code:after {
-  content: '\`';
+
+.ion-color-primary {
+  --ion-color-base: var(--ion-color-primary);
+  --ion-color-base-rgb: var(--ion-color-primary-rgb);
+  --ion-color-contrast: var(--ion-color-primary-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-primary-contrast-rgb);
+  --ion-color-shade: var(--ion-color-primary-shade);
+  --ion-color-tint: var(--ion-color-primary-tint);
 }
